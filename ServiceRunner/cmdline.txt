@@ -1,0 +1,6 @@
+﻿C:\Program Files (x86)\VideoLAN\VLC\vlc.exe
+pes.m3u -I dummy -vvv --loop --sout "#transcode{vcodec=mp2v,vb=400,fps=25,scale=1,width=1280,height=720,acodec=mpga,ab=128,channels=2,samplerate=44100}:std{access=udp{ttl=1},mux=ts,dst=239.255.99.1:1234}" 
+
+# line 1 is exe
+# line 2 is arguments.
+# this padding is needed
